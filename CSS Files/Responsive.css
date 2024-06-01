@@ -1,0 +1,387 @@
+/*                                              Making Website Responsive */
+
+/* <<<<<<<------------  Media Queries  ------------>>>>>>> */
+
+@media (width <=1400px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .Navbar-section {
+    height: 9vh;
+
+    & .container {
+      height: 9vh;
+    }
+  }
+
+  .custom-shape-divider-bottom-1712408717 svg {
+    height: 120px;
+  }
+
+  .custom-shape-divider-bottom-1712408717 {
+    position: absolute;
+    /* bottom: -1px; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  nav .navbar-Items ul .List-Items a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (width <=1200px) {
+  html {
+    font-size: 54%;
+  }
+
+  .Why-Choose-Main-Container {
+    gap: 6.2rem;
+  }
+
+  .custom-shape-divider-bottom-1712408717 svg {
+    height: 100px;
+  }
+
+  .custom-shape-divider-bottom-1712408717 {
+    position: absolute;
+    /* bottom: -1px; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .Center-Mobile-Img-Div {
+    order: -1;
+  }
+
+  .Why-Choose-Cards-Left {
+    order: 2;
+  }
+
+  .Why-Choose-Cards-Right {
+    order: 3;
+  }
+
+  .Center-Mobile-Img-Div figure::before {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+  }
+
+  .Center-Mobile-Img-Div figure::after {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+  }
+}
+
+/* @media (width<=830px) {
+    .Why-Choose-Main-Container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    } }*/
+
+@media (width<=1100px) {
+  .Why-Choose-Main-Container {
+    gap: 6.2rem;
+  }
+
+  .custom-shape-divider-bottom-1712408717 svg {
+    height: 95px;
+  }
+
+  .about-section,
+  .Course-section,
+  .Why-Section,
+  .Blog-Section,
+  .Contact-Section {
+    padding: 4rem 10rem;
+  }
+
+  .Course-Card-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .custom-shape-divider-bottom-1712408717 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  /* Why section Responsive */
+  .Center-Mobile-Img-Div {
+    order: -1;
+  }
+
+  .Why-Choose-Cards-Left {
+    order: 2;
+  }
+
+  .Why-Choose-Cards-Right {
+    order: 3;
+  }
+
+  .Center-Mobile-Img-Div figure::before {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+  }
+
+  .Center-Mobile-Img-Div figure::after {
+    background-color: transparent;
+    height: 0;
+    width: 0;
+  }
+
+  /* blog Section */
+  .Blog-Main-Cards-Container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (width<=998px) {
+  .Why-Choose-Main-Container {
+    gap: 6.2rem;
+  }
+
+  .custom-shape-divider-bottom-1712408717 svg {
+    height: 90px;
+  }
+
+  .Landing-page-content,
+  .grid {
+    padding: 0 10rem;
+    grid-template-columns: 1fr;
+
+    & .landing-page-image {
+      order: 1;
+
+      & figure img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    & .Landing-page-text-content {
+      order: 2;
+    }
+  }
+
+  /* .Why-Choose-Main-Container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    } */
+
+  .custom-shape-divider-bottom-1712408717 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .about-section,
+  .Course-section,
+  .Why-Section,
+  .Blog-Section,
+  .Contact-Section {
+    padding: 4rem 10rem;
+  }
+
+  .Footer-Section {
+    padding: 8rem 10rem 4rem;
+    background-color: var(--footer-bg-color);
+    position: static;
+  }
+
+  .Footer-3-Card {
+    display: none;
+  }
+
+  .Card-container {
+    grid-template-columns: 1fr;
+
+    & .Cards {
+      text-align: left;
+    }
+  }
+
+  .Footer-Section .Footer-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6.4rem 0;
+
+    & .Footer-1-Card {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+    }
+  }
+
+  .Footer-Cards:not(.Footer-1-Card) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+  }
+}
+
+@media (width<=768px) {
+  .custom-shape-divider-bottom-1712408717 svg {
+    height: 60px;
+  }
+
+  .about-section,
+  .Course-section,
+  .Why-Section,
+  .Blog-Section,
+  .Contact-Section {
+    padding: 4rem 1.5rem;
+  }
+
+  .Footer-Section {
+    position: static;
+    padding: 6rem 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .Navbar-section,
+  .container {
+    height: 11vh;
+    padding-bottom: 1rem;
+  }
+
+  .Navbar-section .container .Navbar-logo a img {
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .Landing-page-content,
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+
+    & .Landing-page-text-content {
+      & #Main-Heading-Landing-Page {
+        font-size: 3.6rem;
+        line-height: 5rem;
+      }
+    }
+  }
+
+  .about-section .Card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Course-section .Course-Card-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Why choose reponsiveness */
+  .Why-Section .Why-Choose-Main-Container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .Center-Mobile-Img-Div figure img {
+    width: 40%;
+    height: auto;
+  }
+
+  .Why-Choose-Cards-Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    margin-top: 3rem;
+  }
+
+  /* Study Section responsiveness */
+
+  .Study-section-Main-Container {
+    padding: 6.4rem 2.4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Study-Section .Study-section-Main-Container .Study-Section-Text-Content {
+    & .section-common-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .Study-Section-Text-Content .Study-Section-button {
+    & .btn {
+      margin-top: 3rem;
+      border: none;
+      height: 4rem;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      color: var(--white-color);
+      background-color: var(--main-color);
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+    }
+  }
+
+  /* Contact Page Responsive */
+
+  .Main-Content-div {
+    grid-template-columns: 1fr;
+
+    & .User-Data-div {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (width<=400px) {
+  nav .navbar-Items ul .List-Items {
+    padding: 0.7rem;
+
+    & a {
+      font-size: 1.3rem;
+    }
+  }
+
+  .Navbar-section .container .Navbar-logo a img {
+    /* height: 5rem;
+        margin-bottom: 1rem; */
+    display: none;
+  }
+
+  .Navbar-section,
+  .container {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .Navbar-section {
+    & .container {
+      height: 5vh;
+    }
+  }
+}

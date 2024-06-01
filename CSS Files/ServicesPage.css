@@ -1,0 +1,598 @@
+/* <<<<<<<------- Resources Section ------->>>>>>> */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+/*
+  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  font-family: "Quicksand", sans-serif; 
+
+*/
+
+
+
+
+
+
+
+
+
+/* Theme */
+:root {
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --para-color: #504e4d;
+    --Landing-page-color: #003b99;
+    --white-color: #ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
+    --footer-bg-color: #040d12;
+    --footer-sub-color: #bcbcbc;
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Layout */
+
+
+
+
+
+
+/* <<<<<<<<<<<------------- Website Header --------------->>>>>>>>>> */
+.Navbar-section {
+   
+    box-shadow: 0 0 6px 1px #0000001a;
+}
+
+.container {
+    height: 10vh;
+    max-width: 142rem;
+    /* background-color: #b96868; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 16rem 2.4rem;
+}
+
+.Navbar-section .container .Navbar-logo a img {
+    height: 4rem;
+
+}
+
+nav .navbar-Items ul {
+    display: flex;
+
+}
+
+nav .navbar-Items ul .List-Items {
+    list-style: none;
+    padding: 0 1rem;
+
+}
+
+nav .navbar-Items ul .List-Items a {
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+
+    &:hover:after {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-bottom: 0.2rem solid var(--main-color);
+        border-radius: 0.2rem;
+        left: 0;
+        bottom: -0.25rem;
+        width: 0%;
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<<<<<<<<---------------Course Section---------->>>>>>>>> */
+.Course-section {
+    padding: 4rem 16rem;
+    background-color: var(--supporting-color);
+}
+
+
+.Course-Card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+    padding: 6.4rem 0;
+
+
+}
+
+.Course-Card-container .Course-Cards {
+    padding: 3.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.Course-Card-container .Course-Cards:hover {
+    /* box-shadow: var(--btn-box-shadow); */
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.card-image i {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--supporting-color);
+    /* padding: 1.7rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(37, 37, 37);
+    font-size: 4rem;
+    /* background-color: #000a19; */
+}
+
+
+
+/* Changing Color of icons */
+
+
+.Course-Cards .card-image #Js-Logo {
+    background-color: #ffff3c;
+    color: rgb(40, 40, 40);
+}
+
+.Course-Cards .card-image #Python-Logo {
+    background-color: #0a7590;
+    color: rgb(255, 255, 255);
+}
+
+.Course-Cards .card-image #C-Logo {
+    background-color: #3c30e4;
+    color: #fff;
+}
+
+.Course-Cards .card-image #Java-Logo {
+    background-color: #df2828;
+    color: white;
+
+}
+
+.Course-Cards .card-image #SQL-Logo {
+    background-color: #43bc33;
+    color: white;
+}
+
+.Course-Cards .card-image #HTML-Logo {
+    background-color: #f3651d;
+    color: white;
+
+}
+
+.Course-Cards .card-image #CSS-Logo {
+    background-color: #1874ff;
+    color: white;
+
+}
+
+.Course-Cards .card-image #React-Logo {
+    background-color: #191919;
+    color: rgb(53, 172, 251);
+}
+
+.Course-Cards .card-image #Angular-Logo {
+    background-color: #dd2a2a;
+    color: white;
+}
+
+.Course-Cards .card-image #Node-Logo {
+    background-color: #202020;
+    color: rgb(101, 212, 50);
+}
+
+.Course-Cards .card-image #Linux-Logo {
+    background-color: #ecbb1b;
+    color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-container {
+
+
+
+
+
+    & .section-common-heading {
+        font-size: 3rem;
+        font-family: "Poppins";
+        color: var(--heading-color);
+
+    }
+
+    & .section-common-SubHeading {
+        font-size: 1.5rem;
+        font-family: "Urbanist";
+        color: var(--heading-color);
+        text-transform: capitalize;
+        font-weight: 600;
+        color: var(--font-color);
+
+    }
+}
+
+
+
+
+.card-heading {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 2.4rem 0 1.2rem 0;
+    color: #000a19;
+}
+
+.card-text {
+    font-family: "urbanist";
+    color: var(--para-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Study Section */
+.Study-Section {
+    width: 65%;
+    min-height: 30rem;
+    box-shadow: rgba(60, 64, 67, 0.0) 0px -1px 2px 0px, rgba(60, 64, 67, 0.1) 0px -2px 6px 0px;
+
+
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    position: relative;
+    bottom: -18rem;
+    z-index: 2;
+
+}
+
+.Study-section-Main-Container {
+    background-color: var(--white-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 4rem 2.72rem;
+    gap: 6.4rem;
+}
+
+.Study-Section-Image figure img {
+    width: 90%;
+    height: auto;
+}
+
+
+
+.Study-Section-Text-Content .Study-Section-button {
+    & .btn {
+        margin-top: 3rem;
+        border: none;
+        height: 4rem;
+        width: 17rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
+        color: var(--white-color);
+        background-color: var(--main-color);
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+
+        & a {
+            text-decoration: none;
+            color: var(--white-color);
+            font-family: "Urbanist", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+
+            & .fa-circle-arrow-right {
+                padding: 0rem 0.5rem;
+                font-size: 2rem;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: var(--btn-box-shadow);
+            background-color: var(--btn-hover-bg-color);
+        }
+    }
+}
+
+.Study-Section .Study-section-Main-Container .Study-Section-Text-Content {
+    & .section-common-heading {
+        font-size: 3rem;
+        font-family: "Poppins";
+        color: var(--heading-color);
+        font-weight: 600;
+
+    }
+
+    & .section-common-SubHeading {
+        font-size: 1.5rem;
+        font-family: "Urbanist";
+        color: var(--heading-color);
+        text-transform: none;
+        font-weight: 400;
+        margin-top: .75rem;
+        letter-spacing: .05rem;
+        color: var(--font-color);
+
+    }
+}
+
+
+
+
+
+
+
+/* <<<<<<<<------------ Footer ------------>>>>>>>> */
+
+
+
+.Footer-Section {
+    padding: 8rem 11rem 6rem;
+    background-color: var(--footer-bg-color);
+    position: absolute;
+}
+
+.Footer-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+    padding: 6.4rem 2.4rem;
+}
+
+.Footer-cards-container .Footer-1-Card {
+    margin-right: 1rem;
+}
+
+.Footer-cards-container .Footer-1-Card .card-text {
+
+    font-weight: 500;
+    color: var(--supporting-color);
+    margin: 1rem 0 3rem;
+    letter-spacing: .08rem;
+}
+
+.Footer-cards-container .Footer-1-Card .Social-Links {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Footer-cards-container .Footer-1-Card .Social-Links p {
+
+    & a {
+        text-decoration: none;
+
+        & .fa-brands {
+            height: 4.5rem;
+            width: 4.5rem;
+            background-color: var(--supporting-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            color: var(--btn-hover-bg-color);
+            font-size: 1.8rem;
+            transition: all .3s linear;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+
+            &:hover {
+                color: var(--supporting-color);
+                background-color: var(--btn-hover-bg-color);
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.Footer-cards-container .Footer-Cards .card-heading {
+
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.Footer-cards-container .Footer-Cards .Links ul li {
+    list-style: none;
+    padding: .3rem 0rem;
+}
+
+.Footer-cards-container .Footer-Cards .Links ul li a {
+
+    text-decoration: none;
+    color: var(--supporting-color);
+    font-family: "Urbanist";
+    font-size: 1.3rem;
+    letter-spacing: .08rem;
+}
+
+.Footer-Cards:not(.Footer-1-Card) {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Customizing Scroll Bar */
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--supporting-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--main-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+background-color: var(--heading-color);
+}
